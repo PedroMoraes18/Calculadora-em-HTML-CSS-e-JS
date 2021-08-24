@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale">
+        <link rel="stylesheet" href="calculadora.css">
+        <script src="calculadora.js"></script>
+        <title>Calculadora de Delta</title>
+    </head>
+    <body>
+        <div id="conteudo">
+            <h1>Calculadora de Delta</h1>
+
+            <form>
+                <fieldset>
+                    <legend>Dados para Calcular</legend>
+
+                    <p><label for="a">Valor de A:</label>
+                    <input type="text" id="a" size="5" autofocus>
+                    </p>
+
+                    <p><label for="b">Valor de B:</label>
+                        <input type="text" id="b" size="5">
+                    </p>
+
+                    <p><label for="c">Valor de C:</label>
+                        <input type="text" id="c" size="5">
+                    </p>
+
+                    <hr>
+
+                    <p>
+                        <input type="button" value="Calcular Delta" onclick="calcularDelta()">
+                        <input type="reset" value="Novo Cálculo" onclick="document.getElementById('a').focus()">
+                    </p>
+
+                    <hr>
+
+                    <p><label for="resultado">Resultado:</label>
+                    <output id="resultado"></output>
+                    </p>
+
+                </fieldset>
+
+                <p id="voltar"><a href="calculadora.html">Voltar</a></p>
+            </form>
+
+        </div>
+    
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale">
+        <link rel="stylesheet" href="calculadora.css">
+        <script src="calculadora.js"></script>
+        <title>Calculadora de Esfera</title>
+    </head>
+
+    <body>
+
+        <div id="conteudo">
+            <h1>Calculadora de Esfera</h1>
+
+            <form oninput="calcularComprimento(); calcularArea(); calcularVolume()">
+                <fieldset>
+                    <legend>Dados para Calcular</legend>
+
+                    <p><label for="raio">Raio:</label>
+                    <input type="text" id="raio" size="5" autofocus>
+                    </p>
+
+                    <hr>
+
+                    <p><label for="c">Comprimento:</label>
+                    <output id="c"></output>cm
+                    </p>
+
+                    <p><label for="a">Área:</label>
+                    <output id="a"></output>cm <sup>2</sup>
+                    </p>
+
+                    <p><label for="v">Volume:</label>
+                    <output id="v"></output>cm <sup>3</sup>
+                    </p>
+
+                </fieldset>
+
+                <p id="voltar"><a href="calculadora.html">Voltar</a></p>
+            </form>
+
+        </div>
+
+
+    </body>
+</html>
